@@ -1,23 +1,12 @@
-:root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --text: #f1f5f9;
-      --accent: #38bdf8;
-      --secondary: #0ea5e9;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body.light {
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #0f172a;
-      --accent: #2563eb;
-      --secondary: #1d4ed8;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
-    }
+body {
+  background: #0f0f0f;
+  color: #e0e0e0;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+}

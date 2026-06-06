@@ -1,0 +1,139 @@
+.project-showcase {
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+}
+
+/* Subtle divider line */
+.project-showcase:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+}
+
+.project-showcase.inverted {
+  direction: rtl;
+}
+
+.project-showcase.inverted > * {
+  direction: ltr;
+}
+
+.project-content h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #e0e0e0;
+}
+
+.project-content p {
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Tags - More Solid + Subtle Lines */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+
+.tags span {
+  position: relative;
+  padding: 6px 0;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Subtle separator line between tags */
+.tags span:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Last tag has no line */
+.tags span:last-child::after {
+  display: none;
+}
+
+.tags span:hover {
+  color: #646cff;
+}
+
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.project-btn.primary {
+  background: white;
+  color: black;
+}
+
+.project-btn.primary:hover {
+  background: #646cff;
+  color: white;
+}
+
+.project-btn.secondary {
+  border: 2px solid rgba(255,255,255,0.3);
+  color: white;
+}
+
+.project-btn.secondary:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease;
+}
+
+.project-showcase:hover .project-image img {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .project-showcase,
+  .project-showcase.inverted {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  .project-showcase.inverted {
+    direction: ltr;
+  }
+}
