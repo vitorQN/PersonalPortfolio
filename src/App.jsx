@@ -122,6 +122,29 @@ function App() {
         </div>
       </section>
 
+      {/* Hero */}
+      <section className="hero-overlay">
+        <div className="hero-bg"></div>
+        
+        <div className="hero-content-overlay">
+          <div className="hero-badge">Open to new opportunities</div>
+          
+          <h1 className="hero-title-overlay">
+            Coding like a <span className="highlight">Coder</span>
+          </h1>
+          
+          <p className="hero-subtitle-overlay">
+            Fullstack Developer
+          </p>
+
+          <div className="hero-buttons-overlay">
+            <a href="https://github.com/vitorQN" target="_blank" className="btn secondary">
+              GitHub →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="section projects">
         <div className="section-header">
@@ -158,6 +181,7 @@ function App() {
         />
       </section>
 
+      
       {/* Contact */}
       <section id="contact" className="section contact">
         <h2>Let's Work Together</h2>
@@ -171,7 +195,7 @@ function App() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-left">
-            © 2026 Vitor Queiroz• Built with React & Vite
+            © 2026 Vitor Queiroz • Built with React & Vite
           </div>
           <div className="footer-contact">
             <a href="mailto:vitor.qn2004@gmail.com">Email</a>
