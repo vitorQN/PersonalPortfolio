@@ -2,7 +2,7 @@ import profilebg from '../../assets/profilebg.png';
 import './Hero.css';
 
 function Hero() {
-  return (
+    return (
         <section className="hero">
             <div className="hero-container">
                 {/* Left: Text */}
@@ -27,15 +27,18 @@ function Hero() {
 
                 {/* Right: Profile Photo */}
                 <div className="hero-image">
-                    <img
-                        src={profilebg}
-                        alt="Your Profile"
-                        className="profile-photo"
-                    />
+                    <div className="image-frame">
+                        <img
+                            src={profilebg}
+                            alt="Profile"
+                            className="profile-inside"
+                        />
+                    </div>
+                    <img src={profilebg} className="profile-outside" />
                 </div>
             </div>
         </section>
     );
-} 
+}
 
 export default Hero;
