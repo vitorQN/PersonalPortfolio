@@ -93,6 +93,12 @@
   transform: translateY(-4px);
 }
 
+.page-content {
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
 /* Responsive */
 
 
