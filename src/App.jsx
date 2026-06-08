@@ -7,7 +7,7 @@ import About from './pages/About/About';
 import SkillSection from './pages/SkillSection/SkillSection';
 import HeroOverlay from './components/HeroOverlay/HeroOverlay';
 import Projects from './pages/PersonalProjects/Projects';
-import Contact from './Components/Contact/Contact';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 import './App.css';
