@@ -1,0 +1,84 @@
+.hero-overlay {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1a0033, #2a0a4a, #4c1d95);
+  background-size: 200% 200%;
+  animation: purpleShift 25s ease infinite;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(167, 139, 250, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(192, 132, 252, 0.2) 0%, transparent 50%),
+    url('https://images.wallpapersden.com/image/download/dark-purple-texture_bGpqamuUmZqaraWkpJRmbmdlrWZlbWU.jpg') center/cover; /* Optional subtle texture */
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+}
+
+@keyframes purpleShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-content-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 2rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid rgba(167, 139, 250, 0.4);
+  border-radius: 9999px;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+}
+
+.hero-title-overlay {
+  font-size: 4.8rem;
+  line-height: 1.05;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.highlight {
+  background: linear-gradient(90deg, #a78bfa, #c084fc, #e0bbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle-overlay {
+  font-size: 1.65rem;
+  color: #e0e0e0;
+  max-width: 720px;
+  margin: 0 auto 3.5rem;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-buttons-overlay {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

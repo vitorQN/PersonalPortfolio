@@ -1,0 +1,20 @@
+.contact {
+  text-align: center;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 20px 48px;
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, #646cff, #a855f7);
+  color: white;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
