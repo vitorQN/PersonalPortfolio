@@ -6,6 +6,7 @@ function Hero() {
         <section className="hero">
             <div className="hero-container">
                 {/* Left: Text */}
+                <div className="hero-grid"></div>
                 <div className="hero-text">
                     <div className="badge">Open to new opportunities</div>
 
