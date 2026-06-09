@@ -14,7 +14,7 @@ function ProjectShowcase({
       <div className="project-content">
         <h3>{title}</h3>
         <p>{description}</p>
-        
+
         <div className="tags">
           {tags.map((tag, index) => (
             <span key={index}>{tag}</span>
@@ -32,6 +32,12 @@ function ProjectShowcase({
       </div>
 
       <div className="project-image">
+        <div className="terminal-header">
+          <span className="dot red"></span>
+          <span className="dot yellow"></span>
+          <span className="dot green"></span>
+        </div>
+
         <img src={imageUrl} alt={title} />
       </div>
     </div>
