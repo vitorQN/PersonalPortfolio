@@ -57,57 +57,71 @@
 }
 
 .image-frame {
-    width: 600px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 
     background: #f4f1ee;
 
     border-radius:  250px 0 0 250px;
-
-    position: relative;
-
     overflow: hidden;
+
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
 }
-
-.profile-inside {
-    position: absolute;
-
-    bottom: -0px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    height: 120%;
-
-    z-index: 3;
-}
-
 
 .hero-image {
-    position: relative;
-    width: 600px;
-    height: 500px;
-    justify-self: end;
-    transform: translateX(80px);
+  position: relative;
+  width: min(100%, 650px);
+  
+  aspect-ratio: 1.25 / 1;
 }
 
 .profile-outside {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+  position: absolute;
 
-    transform: translateX(-50%);
-    border-radius: 80%;
-    height: 120%;
+  bottom: 0;
+  left: 50%;
 
-    pointer-events: none;
+  transform: translateX(-50%);
+
+  height: 115%;
+  width: auto;
+  border-radius: 100px 0 0 38%;
+  object-fit: contain;
+}
+
+.card {
+  position: absolute;
+
+  padding: 12px 18px;
+  border-radius: 16px;
+
+  font-weight: 700;
+  color: #000;
+}
+
+.card-1 {
+  top: 15%;
+  right: -30px;
+  background: #ff4f7d;
+}
+
+.card-2 {
+  top: 65%;
+  left: -40px;
+  background: #ff9500;
+}
+
+.card-3 {
+  bottom: -10px;
+  right: 10%;
+  background: #a6ff6d;
 }
 
 @media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 3rem;
     text-align: center;
+    margin: 50px 0 30px 0;
   }
   .hero-text {
     padding-right: 0;
@@ -117,5 +131,19 @@
   }
   .nav-links {
     display: none;
+  }
+
+  .hero-image {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+
+
+  .profile-image {
+    height: 110%;
+  }
+
+  .card {
+    transform: scale(0.8);
   }
 }

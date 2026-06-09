@@ -28,13 +28,18 @@ function Hero() {
                 {/* Right: Profile Photo */}
                 <div className="hero-image">
                     <div className="image-frame">
-                        <img
+
+                    </div>
+                    <img
                             src={profilebg}
                             alt="Profile"
-                            className="profile-inside"
+                            className="profile-outside"
                         />
-                    </div>
-                    <img src={profilebg} className="profile-outside" />
+
+                    {/* Optional floating cards */}
+                    <div className="card card-1">Full Stack</div>
+                    <div className="card card-2">Java</div>
+                    <div className="card card-3">React</div>
                 </div>
             </div>
         </section>
