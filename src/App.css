@@ -101,9 +101,3 @@
 }
 
 /* Responsive */
-
-
-@media (max-width: 768px) {
-  .hero-title-overlay { font-size: 3.4rem; }
-  .hero-subtitle-overlay { font-size: 1.4rem; }
-}

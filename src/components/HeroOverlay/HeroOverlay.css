@@ -82,3 +82,11 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+
+@media (max-width: 800px) {
+  .hero-title-overlay { font-size: 3.4rem; }
+  .hero-subtitle-overlay { font-size: 1.4rem; }
+  .hero-content-overlay { padding:  3rem 0; }
+
+}
