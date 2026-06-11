@@ -19,9 +19,12 @@ import {
 
 
 
+
 function SkillSection() {
     return (
         <section id="skills" className="section skills">
+            
+            
             <h2>Tools & Technologies</h2>
             <div className="skills-grid">
                 <SkillCategory

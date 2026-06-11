@@ -167,6 +167,39 @@
     background: #28c840;
 }
 
+.project-image {
+  cursor: pointer;
+  position: relative;
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: inherit;
+}
+
+.project-image-overlay span {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #19191ef9;
+  text-transform: uppercase;
+  border: 2px solid rgba(255,255,255,0.4);
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+.project-image:hover .project-image-overlay {
+  opacity: 1;
+}
+
 @keyframes float {
     0% {
         transform: translateY(0) rotate(-1deg);

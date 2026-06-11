@@ -10,6 +10,7 @@ import Projects from './pages/PersonalProjects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
+
 import './App.css';
 
 
@@ -18,7 +19,9 @@ function App() {
   
   return (
     <div className="App">
+    
       
+
       {/* Navbar */}
       <NavBar />
       

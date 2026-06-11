@@ -1,4 +1,7 @@
-
+.App {
+   position: relative;
+   overflow: hidden;
+}
 
 .btn {
   padding: 16px 32px;
@@ -28,9 +31,8 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-
-
 .section {
+  position: relative;
   background: #0f0f0f;
   padding: 120px 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);

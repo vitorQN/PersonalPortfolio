@@ -1,0 +1,45 @@
+
+.squares-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+ 
+.square {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.02);
+  bottom: -100px;
+  animation: floatUp linear infinite;
+}
+ 
+
+.square:nth-child(1)  { width: 40px; height: 40px; left: 5%;   animation-duration: 14s; animation-delay: 0s;   }
+.square:nth-child(2)  { width: 20px; height: 20px; left: 12%;  animation-duration: 10s; animation-delay: 2s;   }
+.square:nth-child(3)  { width: 60px; height: 60px; left: 20%;  animation-duration: 18s; animation-delay: 1s;   }
+.square:nth-child(4)  { width: 30px; height: 30px; left: 30%;  animation-duration: 12s; animation-delay: 4s;   }
+.square:nth-child(5)  { width: 15px; height: 15px; left: 38%;  animation-duration: 9s;  animation-delay: 0.5s; }
+.square:nth-child(6)  { width: 50px; height: 50px; left: 48%;  animation-duration: 16s; animation-delay: 3s;   }
+.square:nth-child(7)  { width: 25px; height: 25px; left: 57%;  animation-duration: 11s; animation-delay: 1.5s; }
+.square:nth-child(8)  { width: 70px; height: 70px; left: 65%;  animation-duration: 20s; animation-delay: 0s;   }
+.square:nth-child(9)  { width: 18px; height: 18px; left: 74%;  animation-duration: 8s;  animation-delay: 5s;   }
+.square:nth-child(10) { width: 45px; height: 45px; left: 82%;  animation-duration: 15s; animation-delay: 2.5s; }
+.square:nth-child(11) { width: 22px; height: 22px; left: 90%;  animation-duration: 13s; animation-delay: 1s;   }
+.square:nth-child(12) { width: 35px; height: 35px; left: 96%;  animation-duration: 17s; animation-delay: 3.5s; }
+ 
+/* Slightly more visible accent squares */
+.square:nth-child(3),
+.square:nth-child(6),
+.square:nth-child(8) {
+  border-color: rgba(255, 255, 255, 0.11);
+  background: rgba(255, 255, 255, 0.035);
+}
+ 
+@keyframes floatUp {
+  0%   { transform: translateY(0)      rotate(0deg);   opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.6; }
+  100% { transform: translateY(-90vh) rotate(360deg); opacity: 0; }
+}
