@@ -105,9 +105,9 @@
 }
 
 .image-frame {
-    width: 100%;
+    width: 150%;
     height: 100%;
-
+    transform: translateY(0) rotate(-10deg);
     background: #f4f1ee;
 
     border-radius:  250px 0 0 250px;
@@ -126,14 +126,14 @@
 .profile-outside {
   position: absolute;
 
-  bottom: 0;
+  bottom: -8%;
   left: 50%;
 
-  transform: translateX(-50%);
+  transform: translateX(-55%);
 
-  height: 115%;
+  height: 120%;
   width: auto;
-  border-radius: 100px 0 0 38%;
+  border-radius: 0 0 20% 47%;
   object-fit: contain;
 }
 
