@@ -1,4 +1,5 @@
 import './Footer.css';
+import logo from '../../assets/logo.svg'
 
 import {
     FaInstagram,
@@ -17,11 +18,7 @@ function Footer() {
             <div className="footer-bg"></div>
             <div className="footer-main">
                 <div className="footer-brand">
-                    <h2>
-                        VITOR
-                        <br />
-                        QUEIROZ
-                    </h2>
+                    <img src={logo} alt="" />
 
                     <p>
                         Full Stack Developer focused on building

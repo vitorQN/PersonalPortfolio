@@ -16,14 +16,9 @@
   z-index: 2;
 }
 
-.footer-brand h2 {
-  font-size: 3rem;
-  line-height: 1;
-  letter-spacing: 10px;
-  margin-bottom: 30px;
-  background: linear-gradient(90deg, #a78bfa, #c084fc, #e0bbff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.footer-brand img {
+  width: 60%;
+  margin-bottom: 10px;
 }
 
 .footer-brand p {

@@ -1,11 +1,12 @@
 import './NavBar.css';
+import logo from '../../assets/logo.svg';
 
 function NavBar() {
     return (
         <nav className="navbar">
             <div className="nav-container">
                 <div className="logo">
-                    <span>Vitor Queiroz</span>
+                    <img src={logo} alt=" logo" />
                 </div>
 
                 <div className="nav-links">
