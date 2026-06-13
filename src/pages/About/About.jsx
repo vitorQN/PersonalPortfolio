@@ -41,6 +41,7 @@ function About() {
       <img src={badge3} className="badge-deco badge-deco--br" alt="" aria-hidden="true" />
 
       <h2>About Me</h2>
+      <div className="about-grid"></div>
       <p className="about-text">
         I am a Fullstack Developer with experience building applications using Java, Spring, and JavaScript.
         I focus on creating scalable solutions, writing clean code, and following best development practices.

@@ -29,7 +29,11 @@ function Hero() {
                 {/* Right: Profile Photo */}
                 <div className="hero-image">
                     <div className="image-frame">
-
+                        <img
+                            src={profilebg}
+                            alt="Profile"
+                            className="profile-inside"
+                        />
                     </div>
                     <img
                             src={profilebg}

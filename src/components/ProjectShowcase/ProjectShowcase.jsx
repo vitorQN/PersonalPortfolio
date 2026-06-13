@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './ProjectShowcase.css';
 import ProjectModal from '../ProjectModal/ProjectModal';
+import StorageImage from '../../hooks/ImageBase';
 
 function ProjectShowcase({
   title,
@@ -12,11 +13,14 @@ function ProjectShowcase({
   inverted = false,
 }) {
   const [modalOpen, setModalOpen] = useState(false);
-
+  
   const project = { title, description, tags, imageUrl, liveUrl, codeUrl };
+  
 
   return (
+    
     <>
+    
       <div className={`project-showcase ${inverted ? 'inverted' : ''}`}>
         <div className="project-content">
           <h3>{title}</h3>
@@ -44,7 +48,7 @@ function ProjectShowcase({
             <span className="dot yellow"></span>
             <span className="dot green"></span>
           </div>
-          <img src={imageUrl} alt={title} />
+          <StorageImage filePath={imageUrl} />
           <div className="project-image-overlay">
             <span>Click</span>
           </div>

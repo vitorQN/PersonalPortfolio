@@ -2,18 +2,23 @@
 .navbar {
   position: fixed;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  background: rgba(15, 15, 15, 0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   z-index: 10;
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.25rem 2rem;
+  max-width: 650px;
+  margin: 10px 0px;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(42, 42, 42, 0.562);
+  background: rgba(15, 15, 15, 0.544);
+  backdrop-filter: blur(12px);
   display: flex;
+  gap: 20px;
+  border-radius: 100px;
   justify-content: space-between;
   align-items: center;
 }
@@ -21,21 +26,12 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 1.5rem;
-  font-weight: 700;
 }
 
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, #646cff, #a855f7);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
+.logo img {
+  width: 50px;
 }
+
 
 .nav-links {
   display: flex;

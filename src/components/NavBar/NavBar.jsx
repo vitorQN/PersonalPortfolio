@@ -4,6 +4,7 @@ import logo from '../../assets/logo.svg';
 function NavBar() {
     return (
         <nav className="navbar">
+            
             <div className="nav-container">
                 <div className="logo">
                     <img src={logo} alt=" logo" />

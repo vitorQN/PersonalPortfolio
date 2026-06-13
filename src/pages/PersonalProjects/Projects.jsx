@@ -1,5 +1,6 @@
 import './Projects.css';
 import ProjectShowcase from '../../components/ProjectShowcase/ProjectShowcase';
+import StorageImage from '../../hooks/ImageBase';
 
 
 
@@ -15,12 +16,12 @@ function Projects() {
           title="Ecommerce Platform"
           description="Full-featured modern ecommerce solution with cart, payments, and admin dashboard."
           tags={["React", "TypeScript", "Stripe", "Vite"]}
-          imageUrl="https://picsum.photos/id/1015/600/400"
+          imageUrl="fototest.jpeg"
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project1"
         />
 
-        <ProjectShowcase
+        {/*<ProjectShowcase
           title="Analytics Dashboard"
           description="Real-time data visualization dashboard with beautiful charts and smooth animations."
           tags={["Next.js", "Recharts", "Framer Motion"]}
@@ -37,7 +38,7 @@ function Projects() {
           imageUrl="https://picsum.photos/id/201/600/400"
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project3"
-        />
+        />*/}
       </section>
     )
 }

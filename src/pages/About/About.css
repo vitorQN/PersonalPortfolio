@@ -9,7 +9,6 @@
 }
 .section {
   position: relative;
-  z-index: 0;
 }
 
 /* BASE STATE — hidden and scaled up */
@@ -57,4 +56,47 @@
 }
 .badge-deco--br.badge-deco--visible {
   transform: scale(1) rotate(-8deg) !important;
+}
+
+
+.about-grid {
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(30%, -20%);
+
+    z-index: -1;
+    pointer-events: none;
+
+    opacity: 0.5;
+
+    background-image:
+        linear-gradient(
+            rgba(120, 120, 120, 0.363) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(120, 120, 120, 0.25) 1px,
+            transparent 2px
+        );
+
+    background-size: 24px 24px;
+
+    mask-image: radial-gradient(
+        circle,
+        black 30%,
+        transparent 80%
+    );
+
+    -webkit-mask-image: radial-gradient(
+        circle,
+        black 30%,
+        transparent 80%
+    );
 }
