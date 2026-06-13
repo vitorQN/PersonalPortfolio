@@ -8,13 +8,14 @@ function ProjectShowcase({
   description,
   tags,
   imageUrl,
+  listUrl,
   liveUrl = "#",
   codeUrl = "#",
   inverted = false,
 }) {
   const [modalOpen, setModalOpen] = useState(false);
   
-  const project = { title, description, tags, imageUrl, liveUrl, codeUrl };
+  const project = { title, description, tags, imageUrl, liveUrl, codeUrl, listUrl };
   
 
   return (

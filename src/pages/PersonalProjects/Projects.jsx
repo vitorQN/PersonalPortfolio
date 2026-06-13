@@ -16,6 +16,7 @@ function Projects() {
           description="Full-featured modern ecommerce solution with cart, payments, and admin dashboard."
           tags={["React", "TypeScript", "Stripe", "Vite"]}
           imageUrl="fototest.jpeg"
+          listUrl={["fototest.jpeg","fototest2.jpeg","fototest3.jpeg"]}
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project1"
         />
@@ -25,6 +26,7 @@ function Projects() {
           description="Real-time data visualization dashboard with beautiful charts and smooth animations."
           tags={["Next.js", "Recharts", "Framer Motion"]}
           imageUrl="fototest.jpeg"
+          listUrl={["fototest.jpeg","fototest2.jpeg","fototest3.jpeg"]}
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project2"
           inverted={true}
@@ -35,6 +37,7 @@ function Projects() {
           description="High-performance landing page with excellent Lighthouse scores and modern design."
           tags={["Vite", "React", "GSAP"]}
           imageUrl="fototest.jpeg"
+          listUrl={["fototest.jpeg","fototest2.jpeg","fototest3.jpeg"]}
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project3"
         />

@@ -1,6 +1,7 @@
 
 import { useEffect } from 'react';
 import './ProjectModal.css';
+import StorageImage from '../../hooks/ImageBase';
 
 function ProjectModal({ project, onClose }) {
   // Close on Escape key
@@ -25,11 +26,11 @@ function ProjectModal({ project, onClose }) {
 
         {/* Image */}
         <div className="modal-images">
-          <img src={project.imageUrl} alt={project.title} className="modal-image" />
 
+          <StorageImage nameClass={"modal-image"} filePath={project.listUrl[0]} />
           <div className="modal-image-wrap">
-            <img src={project.imageUrl} alt={project.title} className="modal-image" />
-            <img src={project.imageUrl} alt={project.title} className="modal-image" />
+            <StorageImage nameClass={"modal-image"} filePath={project.listUrl[1]} />
+            <StorageImage nameClass={"modal-image"} filePath={project.listUrl[2]} />
           </div>
         </div>
 
