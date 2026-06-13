@@ -2,8 +2,11 @@ import { useEffect, useState } from 'react'
 import { getImageUrl } from '../lib/storage';
 
 export default function StorageImage({ filePath }) {
+  console.log(filePath);
   if (!filePath) {
-    return <div>Not available</div>;
+    
+    return <div>Not</div>;
+    
   }
 
   const url = getImageUrl(filePath);

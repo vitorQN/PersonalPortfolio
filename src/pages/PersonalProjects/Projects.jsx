@@ -1,6 +1,5 @@
 import './Projects.css';
 import ProjectShowcase from '../../components/ProjectShowcase/ProjectShowcase';
-import StorageImage from '../../hooks/ImageBase';
 
 
 
@@ -21,11 +20,11 @@ function Projects() {
           codeUrl="https://github.com/yourusername/project1"
         />
 
-        {/*<ProjectShowcase
+        <ProjectShowcase
           title="Analytics Dashboard"
           description="Real-time data visualization dashboard with beautiful charts and smooth animations."
           tags={["Next.js", "Recharts", "Framer Motion"]}
-          imageUrl="https://picsum.photos/id/106/600/400"
+          imageUrl="fototest.jpeg"
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project2"
           inverted={true}
@@ -35,10 +34,10 @@ function Projects() {
           title="Marketing Landing Page"
           description="High-performance landing page with excellent Lighthouse scores and modern design."
           tags={["Vite", "React", "GSAP"]}
-          imageUrl="https://picsum.photos/id/201/600/400"
+          imageUrl="fototest.jpeg"
           liveUrl="#"
           codeUrl="https://github.com/yourusername/project3"
-        />*/}
+        />
       </section>
     )
 }

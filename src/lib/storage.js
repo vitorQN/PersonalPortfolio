@@ -7,9 +7,7 @@ const supabase = createClient(
 
 
 export function getImageUrl(filePath) {
-  const { data } = supabase.storage
-    .from("Portfolio")
-    .getPublicUrl(filePath);
+  const { data } = supabase.storage.from("Portfolio").getPublicUrl(filePath);
 
   console.log(data.publicUrl);
 
