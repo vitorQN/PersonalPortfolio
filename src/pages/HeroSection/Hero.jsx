@@ -1,14 +1,18 @@
 import profilebg from '../../assets/profilebg.png';
 import './Hero.css';
+import { useTranslation } from 'react-i18next';
 
 function Hero() {
+
+    const { t } = useTranslation();
+
     return (
         <section className="hero">
             <div className="hero-container">
                 {/* Left: Text */}
                 <div className="hero-grid"></div>
                 <div className="hero-text">
-                    <div className="badge">Open to new opportunities</div>
+                    <div className="badge">{t("hero.badge")}</div>
 
                     <h1 className="hero-title">
                         Hi, I'm <span className="highlight">Vitor Queiroz</span>

@@ -1,0 +1,7 @@
+{
+  "hero": {
+    "badge": "Aberto a novas oportunidades",
+    "title": "Olá, eu sou {{name}}",
+    "subtitle": "Desenvolvedor Full Stack criando experiências web rápidas, seguras e agradáveis."
+  }
+}

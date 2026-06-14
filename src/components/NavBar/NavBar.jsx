@@ -1,5 +1,6 @@
 import './NavBar.css';
 import logo from '../../assets/logo.svg';
+import LanguageSwitcher from '../SwitcherLanguage/LanguageSwitcher';
 
 function NavBar() {
     return (
@@ -16,7 +17,7 @@ function NavBar() {
                     <a href="#skills">Skills</a>
                     <a href="#contact">Contact</a>
                 </div>
-
+                <LanguageSwitcher />
                 <a href="#contact" className="cta-button">Let's Talk</a>
             </div>
         </nav>
