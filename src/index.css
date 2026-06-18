@@ -10,3 +10,20 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   line-height: 1.6;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a8b;
+  border: 3px solid #1c1c1c00;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
