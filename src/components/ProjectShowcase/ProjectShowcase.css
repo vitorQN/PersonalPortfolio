@@ -11,10 +11,10 @@
 }
 
 /* Subtle divider line */
-.project-showcase:not(:last-child)::after {
+.project-showcase::after {
   content: '';
   position: absolute;
-  bottom: -3rem;
+  top: -3rem;
   left: 50%;
   transform: translateX(-50%);
   width: 60%;
@@ -190,7 +190,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.25s ease;
   border-radius: inherit;
 }
@@ -226,7 +226,28 @@
 
 
 @media (max-width: 500px) {
+  .project-showcase {
+    padding: 0 0;
+  }
+  .section-header {
+    margin: 0 0 40px 0;
+  }
+  .section-header h2 {
+    margin: 0 0 10px 0;
+  }
+  .project-content h3 {
+    font-size: 1.5rem;
+  }
+  .project-content p {
+    font-size: 1rem;
+  }
   .project-image .erro-img {
     font-size: 8rem;
+}
+
+.project-showcase::after {
+  content: '';
+  position: absolute;
+  top: -1rem;
 }
 }
