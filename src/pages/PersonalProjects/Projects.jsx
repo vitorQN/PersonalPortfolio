@@ -13,17 +13,17 @@ function Projects() {
           <p className="section-subtitle">{t("projects.subtitle")}</p>
         </div>
 
-        {projectItems.map((project, index) => (
+        {projectItems.map((project) => (
           <ProjectShowcase
             key={project.title}
             title={project.title}
             description={project.description}
             tags={project.tags}
-            imageUrl="fototest.jpeg"
-            listUrl={["fototest.jpeg","fototest2.jpeg","fototest3.jpeg"]}
-            liveUrl="#"
-            codeUrl={`https://github.com/yourusername/project${index + 1}`}
-            inverted={index === 1}
+            imageUrl={project.imageUrl}
+            listUrl={project.listUrl}
+            liveUrl={project.liveUrl}
+            codeUrl={project.codeUrl}
+            inverted={project.inverted}
           />
         ))}
       </section>

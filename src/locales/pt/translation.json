@@ -24,7 +24,7 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "description": "Sou um Desenvolvedor Full Stack com experiência na criação de aplicações usando Java, Spring e JavaScript. Tenho foco em criar soluções escaláveis, escrever código limpo e seguir boas práticas de desenvolvimento. No backend, trabalho com Java e Spring Boot, desenvolvendo APIs REST e aplicações bem estruturadas com ênfase em performance e arquitetura sólida. No frontend, uso JavaScript para construir interfaces dinâmicas e funcionais."
+    "description": "Sou um Desenvolvedor Full Stack com experiência na criação de aplicações usando Java, Spring, React Vite e JavaScript. Tenho foco em criar soluções escaláveis, escrever código limpo e seguir boas práticas de desenvolvimento. No backend, trabalho com Java e Spring Boot, desenvolvendo APIs REST e aplicações bem estruturadas com ênfase em performance e arquitetura sólida. No frontend, uso JavaScript para construir interfaces dinâmicas e funcionais."
   },
   "skills": {
     "title": "Ferramentas e Tecnologias",
@@ -49,20 +49,16 @@
     "closeModal": "Fechar modal",
     "items": [
       {
-        "title": "Plataforma de Ecommerce",
-        "description": "Solução moderna e completa de ecommerce com carrinho, pagamentos e painel administrativo.",
-        "tags": ["React", "TypeScript", "Stripe", "Vite"]
-      },
-      {
-        "title": "Dashboard de Analytics",
-        "description": "Dashboard de visualização de dados em tempo real com gráficos bonitos e animações suaves.",
-        "tags": ["Next.js", "Recharts", "Framer Motion"]
-      },
-      {
-        "title": "Landing Page de Marketing",
-        "description": "Landing page de alta performance com ótimas pontuações no Lighthouse e design moderno.",
-        "tags": ["Vite", "React", "GSAP"]
+        "title": "Portifolio Pessoal",
+        "description": "Portfólio pessoal responsivo em React que destaca projetos, habilidades e contato, com foco em acessibilidade, design limpo e carregamento rápido. Tecnologias: React, JavaScript, HTML5, CSS3, i18next, Git.",
+        "tags": ["React", "SupaBase", "JavaScript", "Vite"],
+        "imageUrl": "layout2.png",
+        "listUrl": [ "layout2.png","Portfoliocover.png" ,"layout3.png"],
+        "liveUrl": "https://portfolio.vitor-qn2004.workers.dev",
+        "codeUrl": "https://github.com/vitorQN/PersonalPortfolio",
+        "inverted": false
       }
+      
     ]
   },
   "contact": {

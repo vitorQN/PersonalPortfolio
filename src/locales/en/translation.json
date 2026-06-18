@@ -24,7 +24,7 @@
   },
   "about": {
     "title": "About Me",
-    "description": "I am a Fullstack Developer with experience building applications using Java, Spring, and JavaScript. I focus on creating scalable solutions, writing clean code, and following best development practices. On the backend, I work with Java and Spring Boot, developing REST APIs and well-structured applications with an emphasis on performance and solid architecture. On the frontend, I use JavaScript to build dynamic and functional user interfaces."
+    "description": "I am a Fullstack Developer with experience building applications using Java, Spring, React vite and JavaScript. I focus on creating scalable solutions, writing clean code, and following best development practices. On the backend, I work with Java and Spring Boot, developing REST APIs and well-structured applications with an emphasis on performance and solid architecture. On the frontend, I use JavaScript to build dynamic and functional user interfaces."
   },
   "skills": {
     "title": "Tools & Technologies",
@@ -49,19 +49,14 @@
     "closeModal": "Close modal",
     "items": [
       {
-        "title": "Ecommerce Platform",
-        "description": "Full-featured modern ecommerce solution with cart, payments, and admin dashboard.",
-        "tags": ["React", "TypeScript", "Stripe", "Vite"]
-      },
-      {
-        "title": "Analytics Dashboard",
-        "description": "Real-time data visualization dashboard with beautiful charts and smooth animations.",
-        "tags": ["Next.js", "Recharts", "Framer Motion"]
-      },
-      {
-        "title": "Marketing Landing Page",
-        "description": "High-performance landing page with excellent Lighthouse scores and modern design.",
-        "tags": ["Vite", "React", "GSAP"]
+        "title": "Personal Portfolio",
+        "description": "A responsive personal portfolio built with React that highlights projects, skills, and contact details with an emphasis on accessibility, clean design, and fast performance. Technologies: React, JavaScript, HTML5, CSS3, i18next, Git.",
+        "tags": ["React", "SupaBase", "JavaScript" ,"Vite"],
+        "imageUrl": "layout2.png",
+        "listUrl": [ "layout2.png","Portfoliocover.png" ,"layout3.png"],
+        "liveUrl": "https://portfolio.vitor-qn2004.workers.dev",
+        "codeUrl": "https://github.com/vitorQN/PersonalPortfolio",
+        "inverted": false
       }
     ]
   },
