@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import SkillCategory from '../../components/SkillCategory/SkillCategory';
 import './SkillSection.css';
 
@@ -10,25 +11,21 @@ import {
   GitIcon,
   FigmaIcon,
   VSCodeIcon,
-  FramerIcon,
   JavaIcon,
   MavenIcon,
   PostmanIcon,
   SpringBootIcon,
 } from '../../components/SkillCategory/Icons';
 
-
-
-
 function SkillSection() {
+    const { t } = useTranslation();
+
     return (
         <section id="skills" className="section skills">
-            
-            
-            <h2>Tools & Technologies</h2>
+            <h2>{t("skills.title")}</h2>
             <div className="skills-grid">
                 <SkillCategory
-                    title="Languages"
+                    title={t("skills.categories.languages")}
                     skills={[
                         { name: "JavaScript", icon: <JavaScriptIcon /> },
                         { name: "Java", icon: <JavaIcon /> },
@@ -38,7 +35,7 @@ function SkillSection() {
                 />
 
                 <SkillCategory
-                    title="Frameworks & Libraries"
+                    title={t("skills.categories.frameworks")}
                     skills={[
                         { name: "React", icon: <ReactIcon /> },
                         { name: "Vite", icon: <ViteIcon /> },
@@ -47,7 +44,7 @@ function SkillSection() {
                 />
 
                 <SkillCategory
-                    title="Tools"
+                    title={t("skills.categories.tools")}
                     skills={[
                         { name: "Git", icon: <GitIcon /> },
                         { name: "Maven", icon: <MavenIcon /> },

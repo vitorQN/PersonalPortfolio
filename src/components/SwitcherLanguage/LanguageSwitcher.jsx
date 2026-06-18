@@ -4,7 +4,7 @@ import { IoLanguage } from "react-icons/io5";
 import './LanguageSwitcher.css'
 
 function LanguageSwitcher() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [open, setOpen] = useState(false);
 
   const changeLanguage = (lang) => {
@@ -17,6 +17,7 @@ function LanguageSwitcher() {
       <button
         className="language-button"
         onClick={() => setOpen(!open)}
+        aria-label={t("language.select")}
       >
         <IoLanguage />
       </button>
@@ -24,11 +25,11 @@ function LanguageSwitcher() {
       {open && (
         <div className="language-dropdown">
           <button onClick={() => changeLanguage("en")}>
-            🇺🇸 English
+            {t("language.english")}
           </button>
 
           <button onClick={() => changeLanguage("pt")}>
-            🇧🇷 Português
+            {t("language.portuguese")}
           </button>
         </div>
       )}

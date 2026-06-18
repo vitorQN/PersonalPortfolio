@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ProjectShowcase.css';
 import ProjectModal from '../ProjectModal/ProjectModal';
 import StorageImage from '../../hooks/ImageBase';
@@ -13,6 +14,7 @@ function ProjectShowcase({
   codeUrl = "#",
   inverted = false,
 }) {
+  const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
   
   const project = { title, description, tags, imageUrl, liveUrl, codeUrl, listUrl };
@@ -35,10 +37,10 @@ function ProjectShowcase({
 
           <div className="project-links">
             <a href={liveUrl} className="project-btn primary" target="_blank" rel="noopener noreferrer">
-              Live Demo
+              {t("projects.liveDemo")}
             </a>
             <a href={codeUrl} className="project-btn secondary" target="_blank" rel="noopener noreferrer">
-              View Code
+              {t("projects.viewCode")}
             </a>
           </div>
         </div>
@@ -51,7 +53,7 @@ function ProjectShowcase({
           </div>
           <StorageImage filePath={imageUrl} />
           <div className="project-image-overlay">
-            <span>Click</span>
+            <span>{t("projects.click")}</span>
           </div>
         </div>
       </div>

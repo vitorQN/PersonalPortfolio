@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import './Footer.css';
 import logo from '../../assets/logo.svg'
 
@@ -7,10 +8,9 @@ import {
     FaLinkedin,
 } from "react-icons/fa";
 
-
-
-
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer
             className="footer"
@@ -21,22 +21,21 @@ function Footer() {
                     <img src={logo} alt="" />
 
                     <p>
-                        Full Stack Developer focused on building
-                        modern and scalable digital experiences.
+                        {t("footer.description")}
                     </p>
                 </div>
 
                 <div className="footer-column">
-                    <h4>INSTITUTIONAL</h4>
+                    <h4>{t("footer.institutional")}</h4>
 
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#about">{t("nav.about")}</a>
+                    <a href="#skills">{t("nav.skills")}</a>
+                    <a href="#projects">{t("nav.projects")}</a>
+                    <a href="#contact">{t("nav.contact")}</a>
                 </div>
 
                 <div className="footer-column">
-                    <h4>CONTACT</h4>
+                    <h4>{t("footer.contact")}</h4>
 
                     <a href="mailto:vitor.qn2004@gmail.com">Email</a>
                     <a
@@ -56,14 +55,14 @@ function Footer() {
                 </div>
 
                 <div className="footer-newsletter">
-                    <h4>GET IN TOUCH</h4>
+                    <h4>{t("footer.getInTouch")}</h4>
 
                     <div className="newsletter-input">
                         <input
                             type="email"
-                            placeholder="Your e-mail"
+                            placeholder={t("footer.emailPlaceholder")}
                         />
-                        <button>→</button>
+                        <button>&rarr;</button>
                     </div>
 
                     <div className="social-icons">
@@ -95,7 +94,7 @@ function Footer() {
             </div>
 
             <div className="footer-bottom">
-                © 2026 Vitor Queiroz. All rights reserved.
+                &copy; 2026 Vitor Queiroz. {t("footer.rights")}
             </div>
         </footer>
     )

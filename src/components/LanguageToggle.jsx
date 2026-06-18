@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-
-const languages = [
-  { code: 'en', shortLabel: 'EN', label: 'English' },
-  { code: 'pt', shortLabel: 'PT-BR', label: 'Português BR' },
-];
+import { useTranslation } from 'react-i18next';
 
 function LanguageToggle({ language, onChange }) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const languages = [
+    { code: 'en', shortLabel: 'EN', label: t("language.english") },
+    { code: 'pt', shortLabel: 'PT-BR', label: t("language.portuguese") },
+  ];
   const activeLanguage = languages.find((item) => item.code === language) ?? languages[0];
 
   useEffect(() => {
@@ -45,7 +46,7 @@ function LanguageToggle({ language, onChange }) {
         onClick={() => setIsOpen((open) => !open)}
         aria-expanded={isOpen}
         aria-haspopup="menu"
-        aria-label={`Current language: ${activeLanguage.label}`}
+        aria-label={`${t("language.current")}: ${activeLanguage.label}`}
       >
         <svg
           className="language-menu-icon"

@@ -1,7 +1,81 @@
 {
+  "common": {
+    "github": "GitHub"
+  },
+  "language": {
+    "select": "Selecionar idioma",
+    "current": "Idioma atual",
+    "english": "Inglês",
+    "portuguese": "Português"
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato",
+    "cta": "Vamos Conversar"
+  },
   "hero": {
     "badge": "Aberto a novas oportunidades",
-    "title": "Olá, eu sou {{name}}",
-    "subtitle": "Desenvolvedor Full Stack criando experiências web rápidas, seguras e agradáveis."
+    "title": "Olá, eu sou",
+    "subtitle": "Desenvolvedor Full Stack criando experiências web rápidas, seguras e agradáveis.",
+    "projectsButton": "Ver meus projetos",
+    "profileAlt": "Perfil"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Sou um Desenvolvedor Full Stack com experiência na criação de aplicações usando Java, Spring e JavaScript. Tenho foco em criar soluções escaláveis, escrever código limpo e seguir boas práticas de desenvolvimento. No backend, trabalho com Java e Spring Boot, desenvolvendo APIs REST e aplicações bem estruturadas com ênfase em performance e arquitetura sólida. No frontend, uso JavaScript para construir interfaces dinâmicas e funcionais."
+  },
+  "skills": {
+    "title": "Ferramentas e Tecnologias",
+    "categories": {
+      "languages": "Linguagens",
+      "frameworks": "Frameworks e Bibliotecas",
+      "tools": "Ferramentas"
+    }
+  },
+  "heroOverlay": {
+    "badge": "Aberto a novas oportunidades",
+    "title": "Programando como um",
+    "highlight": "Coder",
+    "subtitle": "Desenvolvedor Full Stack"
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "subtitle": "Alguns dos meus trabalhos recentes",
+    "liveDemo": "Demo ao vivo",
+    "viewCode": "Ver código",
+    "click": "Clique",
+    "closeModal": "Fechar modal",
+    "items": [
+      {
+        "title": "Plataforma de Ecommerce",
+        "description": "Solução moderna e completa de ecommerce com carrinho, pagamentos e painel administrativo.",
+        "tags": ["React", "TypeScript", "Stripe", "Vite"]
+      },
+      {
+        "title": "Dashboard de Analytics",
+        "description": "Dashboard de visualização de dados em tempo real com gráficos bonitos e animações suaves.",
+        "tags": ["Next.js", "Recharts", "Framer Motion"]
+      },
+      {
+        "title": "Landing Page de Marketing",
+        "description": "Landing page de alta performance com ótimas pontuações no Lighthouse e design moderno.",
+        "tags": ["Vite", "React", "GSAP"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vamos Trabalhar Juntos",
+    "description": "Estou sempre animado para colaborar em projetos interessantes.",
+    "button": "Diga Olá"
+  },
+  "footer": {
+    "description": "Desenvolvedor Full Stack focado em criar experiências digitais modernas e escaláveis.",
+    "institutional": "INSTITUCIONAL",
+    "contact": "CONTATO",
+    "getInTouch": "ENTRE EM CONTATO",
+    "emailPlaceholder": "Seu e-mail",
+    "rights": "Todos os direitos reservados."
   }
 }

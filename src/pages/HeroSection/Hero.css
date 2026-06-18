@@ -64,6 +64,15 @@
 }
 
 
+.image-frame .hero-grid {
+  width: 2050px;
+  height: 1050px;
+  background-size: 34px 34px;
+  left: 130%;
+
+}
+
+
 .hero-text {
   position: relative;
   padding-right: 2rem;
@@ -153,29 +162,26 @@
 .card {
   position: absolute;
   z-index: 3;
-  padding: 12px 18px;
-  border-radius: 16px;
-
-  font-weight: 700;
-  color: #000;
 }
 
 .card-1 {
-  top: 15%;
+  top: -20%;
   right: -30px;
-  background: #ff4f7d;
+  
+  width: 30%;
 }
 
+
 .card-2 {
-  top: 65%;
+  top: 0%;
   left: -40px;
-  background: #ff9500;
+  z-index: -1;
 }
 
 .card-3 {
-  bottom: -10px;
-  right: 10%;
-  background: #a6ff6d;
+  bottom: -20%;
+  right: 60%;
+  width: 25%;
 }
 
 @media (max-width: 768px) {

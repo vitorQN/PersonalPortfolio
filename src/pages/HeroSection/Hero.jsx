@@ -1,6 +1,10 @@
 import profilebg from '../../assets/profilebg.png';
 import './Hero.css';
 import { useTranslation } from 'react-i18next';
+import java from '../../assets/java.png'
+
+import ufrb from '../../assets/UFRBIcon.svg'
+import dev from '../../assets/devIcon.svg'
 
 function Hero() {
 
@@ -15,17 +19,17 @@ function Hero() {
                     <div className="badge">{t("hero.badge")}</div>
 
                     <h1 className="hero-title">
-                        Hi, I'm <span className="highlight">Vitor Queiroz</span>
+                        {t("hero.title")} <span className="highlight">Vitor Queiroz</span>
                     </h1>
 
                     <p className="hero-subtitle">
-                        Fullstack Developer crafting fast, safe, and delightful web experiences.
+                        {t("hero.subtitle")}
                     </p>
 
                     <div className="hero-buttons">
-                        <a href="#projects" className="btn primary">View My Projects</a>
+                        <a href="#projects" className="btn primary">{t("hero.projectsButton")}</a>
                         <a href="https://github.com/vitorQN" target="_blank" className="btn secondary">
-                            GitHub →
+                            {t("common.github")} &rarr;
                         </a>
                     </div>
                 </div>
@@ -35,20 +39,22 @@ function Hero() {
                     <div className="image-frame">
                         <img
                             src={profilebg}
-                            alt="Profile"
+                            alt={t("hero.profileAlt")}
                             className="profile-inside"
                         />
+                        <div className="hero-grid"></div>
                     </div>
                     <img
-                            src={profilebg}
-                            alt="Profile"
-                            className="profile-outside"
-                        />
+                        src={profilebg}
+                        alt={t("hero.profileAlt")}
+                        className="profile-outside"
+                    />
 
                     {/* Optional floating cards */}
-                    <div className="card card-1">Full Stack</div>
-                    <div className="card card-2">Java</div>
-                    <div className="card card-3">React</div>
+                    <img src={java} alt="" className="card card-1"/>
+                    <img src={ufrb} alt="" className="card card-2"/>
+                    <img src={dev} alt="" className="card card-3"/>
+                   
                 </div>
             </div>
         </section>

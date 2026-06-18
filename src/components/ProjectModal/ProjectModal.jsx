@@ -1,9 +1,12 @@
 
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './ProjectModal.css';
 import StorageImage from '../../hooks/ImageBase';
 
 function ProjectModal({ project, onClose }) {
+  const { t } = useTranslation();
+
   // Close on Escape key
   useEffect(() => {
     const handleKey = (e) => { if (e.key === 'Escape') onClose(); };
@@ -22,7 +25,7 @@ function ProjectModal({ project, onClose }) {
       <div className="modal-container" onClick={(e) => e.stopPropagation()}>
 
         {/* Close button */}
-        <button className="modal-close" onClick={onClose} aria-label="Close modal">✕</button>
+        <button className="modal-close" onClick={onClose} aria-label={t("projects.closeModal")}>&times;</button>
 
         {/* Image */}
         <div className="modal-images">
@@ -52,12 +55,12 @@ function ProjectModal({ project, onClose }) {
           <div className="modal-actions">
             {project.liveUrl && project.liveUrl !== '#' && (
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="modal-btn modal-btn-primary">
-                Live Demo →
+                {t("projects.liveDemo")} &rarr;
               </a>
             )}
             {project.codeUrl && (
               <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" className="modal-btn modal-btn-secondary">
-                View Code
+                {t("projects.viewCode")}
               </a>
             )}
           </div>

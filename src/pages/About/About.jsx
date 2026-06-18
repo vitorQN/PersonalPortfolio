@@ -1,10 +1,12 @@
 import { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import './About.css';
 import badge1 from '../../assets/IFBAicon.svg';
 import badge2 from '../../assets/devIcon.svg';
 import badge3 from '../../assets/MachiningIcon.svg';
 
 function About() {
+  const { t } = useTranslation();
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +19,6 @@ function About() {
           const badges = section.querySelectorAll('.badge-deco');
 
           if (entry.isIntersecting) {
-            // scrolling DOWN — sticker slap in
             badges.forEach((badge, i) => {
               setTimeout(() => {
                 badge.classList.add('badge-deco--visible');
@@ -40,14 +41,10 @@ function About() {
       <img src={badge2} className="badge-deco badge-deco--tr" alt="" aria-hidden="true" />
       <img src={badge3} className="badge-deco badge-deco--br" alt="" aria-hidden="true" />
 
-      <h2>About Me</h2>
+      <h2>{t("about.title")}</h2>
       <div className="about-grid"></div>
       <p className="about-text">
-        I am a Fullstack Developer with experience building applications using Java, Spring, and JavaScript.
-        I focus on creating scalable solutions, writing clean code, and following best development practices.
-        On the backend, I work with Java and Spring Boot, developing REST APIs and well-structured applications
-        with an emphasis on performance and solid architecture. On the frontend, I use JavaScript to build
-        dynamic and functional user interfaces.
+        {t("about.description")}
       </p>
 
     </section>

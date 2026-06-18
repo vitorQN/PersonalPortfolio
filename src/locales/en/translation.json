@@ -1,7 +1,81 @@
 {
+  "common": {
+    "github": "GitHub"
+  },
+  "language": {
+    "select": "Select language",
+    "current": "Current language",
+    "english": "English",
+    "portuguese": "Portuguese"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "cta": "Let's Talk"
+  },
   "hero": {
     "badge": "Open to new opportunities",
-    "title": "Hi, I'm {{name}}",
-    "subtitle": "Fullstack Developer crafting fast, safe, and delightful web experiences."
+    "title": "Hi, I'm",
+    "subtitle": "Fullstack Developer crafting fast, safe, and delightful web experiences.",
+    "projectsButton": "View My Projects",
+    "profileAlt": "Profile"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a Fullstack Developer with experience building applications using Java, Spring, and JavaScript. I focus on creating scalable solutions, writing clean code, and following best development practices. On the backend, I work with Java and Spring Boot, developing REST APIs and well-structured applications with an emphasis on performance and solid architecture. On the frontend, I use JavaScript to build dynamic and functional user interfaces."
+  },
+  "skills": {
+    "title": "Tools & Technologies",
+    "categories": {
+      "languages": "Languages",
+      "frameworks": "Frameworks & Libraries",
+      "tools": "Tools"
+    }
+  },
+  "heroOverlay": {
+    "badge": "Open to new opportunities",
+    "title": "Coding like a",
+    "highlight": "Coder",
+    "subtitle": "Fullstack Developer"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Some of my recent work",
+    "liveDemo": "Live Demo",
+    "viewCode": "View Code",
+    "click": "Click",
+    "closeModal": "Close modal",
+    "items": [
+      {
+        "title": "Ecommerce Platform",
+        "description": "Full-featured modern ecommerce solution with cart, payments, and admin dashboard.",
+        "tags": ["React", "TypeScript", "Stripe", "Vite"]
+      },
+      {
+        "title": "Analytics Dashboard",
+        "description": "Real-time data visualization dashboard with beautiful charts and smooth animations.",
+        "tags": ["Next.js", "Recharts", "Framer Motion"]
+      },
+      {
+        "title": "Marketing Landing Page",
+        "description": "High-performance landing page with excellent Lighthouse scores and modern design.",
+        "tags": ["Vite", "React", "GSAP"]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "I'm always excited to collaborate on interesting projects.",
+    "button": "Say Hello"
+  },
+  "footer": {
+    "description": "Full Stack Developer focused on building modern and scalable digital experiences.",
+    "institutional": "INSTITUTIONAL",
+    "contact": "CONTACT",
+    "getInTouch": "GET IN TOUCH",
+    "emailPlaceholder": "Your e-mail",
+    "rights": "All rights reserved."
   }
-} 
+}
