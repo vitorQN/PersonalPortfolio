@@ -1,7 +1,8 @@
 .footer {
-  margin-top: 100px;
-  position: relative;
+  margin-top: 50px;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .footer-main {
@@ -17,7 +18,8 @@
 }
 
 .footer-brand img {
-  width: 60%;
+  max-width: 130px;
+  width: 130px;
   margin-bottom: 10px;
 }
 
@@ -104,36 +106,75 @@
   padding: 30px;
   border-top: 1px solid #ddd2c7;
   font-size: 0.95rem;
-
-  position: relative;
   z-index: 2;
 }
 
 
 .footer-bg {
-  position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #1a0033, #2a0a4a, #4c1d95);
+  background-color: #fffaeb00;
+  border-radius: 50px 50px 0 0;
   background-size: 200% 200%;
   animation: purpleShift 25s ease infinite;
+
 }
 
-.footer-bg::after {
-  content: '';
+.grid {
   position: absolute;
-  inset: 0;
-  background: 
-    radial-gradient(circle at 30% 20%, rgba(167, 139, 250, 0.25) 0%, transparent 50%),
-    radial-gradient(circle at 70% 80%, rgba(192, 132, 252, 0.2) 0%, transparent 50%),
-    url('https://images.wallpapersden.com/image/download/dark-purple-texture_bGpqamuUmZqaraWkpJRmbmdlrWZlbWU.jpg') center/cover; /* Optional subtle texture */
-  opacity: 0.4;
-  mix-blend-mode: overlay;
+
+  width: 450px;
+  height: 450px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-100%, -50%);
+
+  z-index: -1;
+  pointer-events: none;
+
+  opacity: 0.5;
+
+  background-image:
+    linear-gradient(rgba(120, 120, 120, 0.363) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
+      rgba(120, 120, 120, 0.25) 1px,
+      transparent 2px);
+
+  background-size: 24px 24px;
+
+  mask-image: radial-gradient(circle,
+      black 30%,
+      transparent 80%);
+
+  -webkit-mask-image: radial-gradient(circle,
+      black 30%,
+      transparent 80%);
 }
+
+
+.footer-bg .grid {
+  width: 2000px;
+  height: 2000px;
+  background-size: 34px 34px;
+  left: 120%;
+
+}
+
 
 @keyframes purpleShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -143,7 +184,12 @@
     padding: 60px 30px;
   }
 
+
   .footer-brand h2 {
     font-size: 2.3rem;
   }
+}
+
+@media (max-width:500px) {
+  
 }
