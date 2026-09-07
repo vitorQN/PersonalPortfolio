@@ -57,6 +57,16 @@
         "liveUrl": "https://portfolio.vitor-qn2004.workers.dev",
         "codeUrl": "https://github.com/vitorQN/PersonalPortfolio",
         "inverted": false
+      },
+      {
+        "title": "Fluxo Maré",
+        "description": "Fluxo Maré is a swimwear brand created by Cláudio Henrique Cardoso, who developed it as an academic project during his fashion studies. To introduce the brand to the world, I developed and structured a front-end application using tools such as React.js, Vite, and Node, along with clean architecture, various libraries, and other technologies, aiming to add value to the brand by serving as a portfolio or interactive showcase.",
+        "tags": ["React", "JavaScript", "Vite"],
+        "imageUrl": "capafluxo.png",
+        "listUrl": [ "capafluxo.png","fluxo1.png" ,"fluxo4.png"],
+        "liveUrl": "https://fluxomare.pages.dev",
+        "codeUrl": "https://github.com/vitorQN/Fluxo_Mare",
+        "inverted": true
       }
     ]
   },

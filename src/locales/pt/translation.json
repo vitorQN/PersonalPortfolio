@@ -57,6 +57,16 @@
         "liveUrl": "https://portfolio.vitor-qn2004.workers.dev",
         "codeUrl": "https://github.com/vitorQN/PersonalPortfolio",
         "inverted": false
+      },
+      {
+        "title": "Fluxo Maré",
+        "description": "Fluxo Maré é uma marca de moda praia criada por Cláudio Henrique Cardoso, que desenvolveu essa marca como um projeto acadêmico em sua faculdade de moda. E para apresentar a marca ao mundo, desenvolvi e estruturei uma aplicação front-end com ferramentas como ReactJs, Vite, Node, arquitetura limpa ,Bibliotecas e outras tecnologias, com o intuito de agregar valor a marca agindo como um portifólio ou uma vitrine interativa.",
+        "tags": ["React", "JavaScript", "Vite"],
+        "imageUrl": "capafluxo.png",
+        "listUrl": [ "capafluxo.png","fluxo1.png" ,"fluxo4.png"],
+        "liveUrl": "https://fluxomare.pages.dev",
+        "codeUrl": "https://github.com/vitorQN/Fluxo_Mare",
+        "inverted": true
       }
       
     ]
